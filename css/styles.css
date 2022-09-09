@@ -422,7 +422,6 @@ img {
 .social {
     display: flex;
     justify-content: center;
-    /* outline:1px solid tomato; */
 }
 
 .social__item:not(:first-child) {
@@ -452,19 +451,18 @@ img {
     fill: currentColor;
 }
 
+/* Клієнти */
 
-
-
-.client-list {
+.clients__list {
     display: flex;
     justify-content: center;
 }
 
-.client-list .item+.item {
+.clients__item:not(:first-child) {
     margin-left: 30px;
 }
 
-.client-link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -478,13 +476,13 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.client-icon {
+.clients__icon {
     fill: currentColor;
 }
 
