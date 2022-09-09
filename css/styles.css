@@ -106,9 +106,9 @@ img {
 
 /* стилізація лого */
 
-.logo {
+/* .logo {
     text-decoration: none;
-}
+} */
 
 .logo__web {
     color: var(--accent-color);
@@ -128,13 +128,8 @@ img {
     letter-spacing: 0.03em;
 }
 
-.logo-studio-footer {
+.logo__studio--inverse {
     color: #FFFFFF;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
 }
 
 /* стилізація навігації */
@@ -288,6 +283,11 @@ img {
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    cursor: pointer;
 }
 
 /* секції */
@@ -582,13 +582,6 @@ img {
     color: #FFFFFF;
 }
 
-/* Кнопки */
-
-.hero-button:hover,
-.hero-button:focus {
-    cursor: pointer;
-}
-
 .port-button {
     padding: 6px 22px;
 
@@ -634,15 +627,25 @@ img {
     background-color: var(--third-bg-color);
 }
 
-.footer-logo {
-   margin-bottom: 20px; 
+.footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    ;
 }
 
-.ul-address > .item {
+.footer-section>.container {
+    display: flex;
+}
+
+.footer-logo {
+    margin-bottom: 20px; 
+}
+
+.address__item {
     margin-bottom: 9px;
 }
 
-.address-link {
+.address__link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     text-decoration: none;
@@ -651,7 +654,7 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-map {
+.address__map {
     color: #FFFFFF;
     font-style: normal;
     text-decoration: none;
@@ -660,24 +663,16 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-map:hover,
-.link-map:focus {
+.address__map:hover,
+.address__map:focus {
     color: var(--accent-color);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
     color: var(--accent-color);
 }
 
-.footer-section {
-    padding-top: 60px;
-    padding-bottom: 60px;;
-}
-
-.footer-section>.container {
-    display: flex;
-}
 
 .footer-social {
     display: flex;
@@ -687,8 +682,8 @@ img {
     margin-left: 70px;
 }
 
-.p-footer-social,
-.p-footer-subscribe {
+.footer-social__title,
+.subscribe__title {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 14px;
@@ -699,16 +694,16 @@ img {
     margin-bottom: 20px;
 }
 
-.ul-footer-social {
+.footer-social__list {
     display: flex;
     flex-direction: row;
 }
 
-.ul-footer-social .item+.item {
+.footer-social__item:not(:first-child) {
     margin-left: 10px;
 }
 
-.footer-social-link {
+.footer-social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -722,31 +717,31 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover,
+.footer-social__link:focus {
     background-color: var(--accent-color);
     color: #FFFFFF;
 }
 
-.footer-social-icon {
+.footer-social__icon {
     fill: currentColor;
 }
 
 
 /* Фрпма підписки */
 
-.footer-subscribe {
+.subscribe {
     display: flex;
     flex-direction: column;
     margin-left: 93px;
     margin-top: 12px;
 }
 
-.form-subscribe {
+.subscribe__form {
     width: 570px;
 }
 
-.subscribe-input {
+.subscribe__input {
     width: 358px;
     height: 50px;
     padding-top: 15px;
@@ -767,14 +762,14 @@ img {
     outline: transparent;
 }
 
-.subscribe-field {
+.subscribe__field {
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.subscribe-label {
+.subscribe__label {
     position: absolute;
     top: 15px;
     left: 16px;
@@ -786,8 +781,8 @@ img {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscribe-input:focus+.subscribe-label,
-.subscribe-input:not(:placeholder-shown) + .subscribe-label {
+.subscribe__input:focus+.subscribe__label,
+.subscribe__input:not(:placeholder-shown) + .subscribe__label {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -800,7 +795,7 @@ img {
     margin: -1px;
 }
 
-.subscribe-button {
+.subscribe__button {
     display: flex;
     justify-content: center;
 
@@ -819,11 +814,11 @@ img {
     color: #FFFFFF;
 }
 
-.subscribe-button:hover {
+.subscribe__button:hover {
     cursor: pointer;
 }
 
-.subscribe-icon {
+.subscribe__icon {
    fill: currentColor;
    margin-left: 10px;
    margin-top: 3px;
