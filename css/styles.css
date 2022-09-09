@@ -59,6 +59,39 @@ img {
     /* outline: 2px solid tomato; */
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+/* приховані заголовки */
+
+.hidden-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+
 /* стилізація хедера */
 
 .header {
@@ -118,10 +151,6 @@ img {
     margin-left: 93px;
 }
 
-/* .site-nav .item:not(:last-child) {
-    margin-right: 50px;
-} дає такий-же ефект */
-
 .site-nav__item:not(:first-child) {
     margin-left: 50px;
 }
@@ -170,7 +199,7 @@ img {
     border-radius: 2px;
 }
 
-/* Авторизація */
+/* Хедер - контакти */
 
 .contact {
     display: flex;
@@ -261,27 +290,50 @@ img {
     letter-spacing: 0.06em;
 }
 
-/* приховані заголовки */
-
-.hidden-title {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
-
 /* секції */
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+/* Переваги */
+
+.benefits {
+    display: flex;
 }
+
+.benefits__item {
+    width: 270px;
+}
+
+.benefits__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--secondary-bg-color);
+    border-radius: 4px;
+}
+
+.benefits__item:not(:first-child) {
+    margin-left: 30px;
+}
+
+.benefits__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    color: var(--tittle-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefits__text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*Чим ми займаємось*/
 
 .whatwedo {
     padding-top: 0;
@@ -323,63 +375,6 @@ img {
 .team {
     padding-top: 94px;
     background-color: var(--secondary-bg-color);
-}
-
-.benefits {
-    display: flex;
-}
-
-.benefits .item {
-    width: 270px;
-}
-
-.benefits-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--secondary-bg-color);
-    border-radius: 4px;
-    /* outline: 1px solid red; */
-}
-
-/* .benefits-icon {
-    width: 70px;
-    height: 70px;
-} */
-
-.benefits .item + .item {
-    margin-left: 30px;
-}
-
-.li-title-benefits {
-    margin-top: 0;
-    margin-bottom: 10px;
-    
-    color: var(--tittle-text-color);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.section-title {
-    margin-top: 0;
-    margin-bottom: 50px;
-
-    color: var(--tittle-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-}
-
-.p-benefits {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .ul-team {
