@@ -486,83 +486,80 @@ img {
     fill: currentColor;
 }
 
+/* Стилізація фільтра на сторінці Портфоліо */
+
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__button {
+    padding: 6px 22px;
+
+    background-color: var(--secondary-bg-color);
+    color: var(--tittle-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter__button:hover,
+.filter__button:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter__item:not(:first-child) {
+    margin-left: 8px;
+}
+
 
 /* Стилізація галереї на сторінці Портфоліо */
 
-.ul-portfolio {
+.portfolio {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.ul-portfolio .item {
+.portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
-}
 
-.ul-portfolio>.item {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ul-portfolio>.item:hover {
+.portfolio__item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.li-title-portfolio {
-    margin-bottom: 4px;
+/* Стилізація Картки портфоліо */
 
-    color: var(--tittle-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.p-portfolio {
-    margin-top: 0;
-    margin-bottom: 0;
-    
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-}
-
-.port-card {
+.card {
     display: flex;
     flex-direction: column;
 }
 
-.port-card:hover .port-overlay {
+.card:hover .card__overlay {
     transform: translateY(0);
 }
 
-.port-card > img {
-    flex-grow: 1;
-}
-
-.port-card > .port-card-footer {
-    background-color: #FFFFFF;
-    border-right: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-}
-
-.port-card-footer {
-    overflow: hidden;
-    z-index: 2;
-}
-
-.port-photo-wrap {
+.card__photo-wrap {
     position: relative;
     overflow: hidden;
 }
 
-.port-overlay {
+.card__overlay {
     position: absolute;
     left: 0;
     top: 0;
@@ -582,41 +579,45 @@ img {
     color: #FFFFFF;
 }
 
-.port-button {
-    padding: 6px 22px;
+.card__image {
+    flex-grow: 1;
+}
 
-    background-color: var(--secondary-bg-color);
+.card__footer {
+    background-color: #FFFFFF;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+.card__title {
+    margin-bottom: 4px;
+
     color: var(--tittle-text-color);
-    font-family: inherit;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.card__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.63;
+    line-height: 1.88;
     letter-spacing: 0.03em;
-    border-radius: 4px;
-    border: none;
-
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-button:hover,
-.port-button:focus {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.card__footer {
+    overflow: hidden;
+    z-index: 2;
 }
-
-.port-button-list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
-
-.port-button-list .item + .item {
-    margin-left: 8px;
-}
-
 
 /* футер */
 
