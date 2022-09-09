@@ -339,15 +339,15 @@ img {
     padding-top: 0;
 }
 
-.ul-whatwedo {
+.whatwedo__list {
     display: flex;
 }
 
-.ul-whatwedo .item + .item {
+.whatwedo__item:not(:first-child) {
     margin-left: 30px;
 }
 
-.whatwedo-meta {
+.whatwedo__meta {
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -360,17 +360,19 @@ img {
     background-color: rgba(47, 48, 58, 0.8);;
 }
 
-.ul-whatwedo>.item {
+.whatwedo__item {
     position: relative;
 }
 
-.whatwedo-meta>h3 {
+.whatwedo__title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     color: #FFFFFF;
 }
+
+/* Команда */
 
 .team {
     padding-top: 94px;
