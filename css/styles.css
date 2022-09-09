@@ -379,25 +379,25 @@ img {
     background-color: var(--secondary-bg-color);
 }
 
-.ul-team {
+.team__list {
     display: flex;
 }
 
-.ul-team > .item {
+.team__item {
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.ul-team .item + .item {
+.team__item:not(:first-child) {
     margin-left: 30px;
 }
 
-.caption-team {
+.team__meta {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.li-title-team {
+.team__name {
     margin-bottom: 10px;
     text-align: center;
 
@@ -408,7 +408,7 @@ img {
     letter-spacing: 0.03em;
 }
 
-.p-team {
+.team__position {
     text-align: center;
     margin-bottom: 16px;
 
