@@ -30,6 +30,11 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .address__map {
@@ -39,16 +44,11 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.address__map:hover,
-.address__map:focus {
-    color: var(--accent-color);
-}
-
-.address__link:hover,
-.address__link:focus {
-    color: var(--accent-color);
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 
@@ -93,12 +93,12 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-social__link:hover,
-.footer-social__link:focus {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+    }
 }
 
 .footer-social__icon {

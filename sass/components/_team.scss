@@ -63,12 +63,12 @@
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social__link:hover,
-.social__link:focus {
-    background-color: var(--accent-color);
-    color: #FFFFFF;
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: #FFFFFF;
+    }
 }
 
 .social__icon {
