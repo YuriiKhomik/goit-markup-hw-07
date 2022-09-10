@@ -46,6 +46,12 @@
     text-align: center;
 }
 
+// normalise
+
+@import "./base/normalise";
+
+// zero
+
 @import "./base/reset";
 
 /* стилізація лого */
