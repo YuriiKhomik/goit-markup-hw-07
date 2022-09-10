@@ -95,21 +95,7 @@ img {
   text-align: center;
 }
 
-/* стилізація хедера */
-.header {
-  background-color: #FFFFFF;
-  border-bottom: 1px solid #ECECEC;
-}
-
-.header-section {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
 /* стилізація лого */
-/* .logo {
-    text-decoration: none;
-} */
 .logo__web {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -130,6 +116,17 @@ img {
 
 .logo__studio--inverse {
   color: #FFFFFF;
+}
+
+/* стилізація хедера */
+.header {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-section {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* стилізація навігації */
@@ -300,7 +297,6 @@ img {
   cursor: pointer;
 }
 
-/* секції */
 /* Переваги */
 .benefits {
   display: -webkit-box;
