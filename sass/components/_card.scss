@@ -3,10 +3,6 @@
     flex-direction: column;
 }
 
-.card:hover .card__overlay {
-    transform: translateY(0);
-}
-
 .card__photo-wrap {
     position: relative;
     overflow: hidden;
@@ -30,6 +26,10 @@
     line-height: 1.56;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    .card:hover & {
+        transform: translateY(0);
+    }
 }
 
 .card__image {
